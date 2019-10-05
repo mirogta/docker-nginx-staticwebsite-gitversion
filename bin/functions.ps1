@@ -66,3 +66,32 @@ function Get-ImageNameWithVersion
 
     "${imageName}:$version"
 }
+
+function Get-RegistryHost
+{
+    <#
+    .Description
+    Get-RegistryHost Returns a Docker registry host:port
+
+    Please note that for the sake of simplicity, this is hard-coded here.
+    It could be parametrised, set from CI/CD or elsewhere.
+    #>
+
+    'localhost:5000'
+}
+
+function Get-RegistryPath
+{
+    <#
+    .Description
+    Get-RegistryPath Returns a Docker registry path
+
+    Please note that for the sake of simplicity, all the variables are hard-coded here.
+    They could be parametrised, set from CI/CD or elsewhere.
+    #>
+
+    $vendor = 'vocalink'
+    $project = 'exercise'
+
+    "$vendor/$project"
+}
