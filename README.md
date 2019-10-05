@@ -6,7 +6,7 @@ This is a simple demonstration of creating a simple Docker image, pushing to a l
 
 ## Requirements
 
-See [requirements](doc\requirements.md)
+See [requirements](doc/requirements.md)
 
 Assumption - since it's supposed to be a web app, rather than returning just the "Hello World" plain text, the web app will return a well-formed HTML document which contains the "Hello World" text. The app is a Single Paged Application (SPA) for simplicity and the language of choice is a simple HTML. This is a very simple scenario which doesn't require any complex or multi-staged builds in the Dockerfile.
 
@@ -53,6 +53,9 @@ NOTE: After installing Chocolatey, all further dependencies can be installed in 
   ```
   docker images
   docker run -d -p 80:80 <image_name>:<version>
+
+  docker run -d -p 80:80  localhost:5000/vocalink/exercise/docker-nginx-staticwebsite-gitversion:0.1.5
+
   curl localhost:80
   docker ps
   docker stop <container_id>
