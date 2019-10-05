@@ -90,3 +90,26 @@ NOTE: After installing Chocolatey, all further dependencies can be installed in 
 
 > As an output we expect a git repo with all of you work contained within.
 
+## Links
+
+* [How to run a local Docker registry](https://docs.docker.com/registry/deploying/)
+* [Chocolatey](https://chocolatey.org)
+  * [- install](https://chocolatey.org/install)
+* [Installing PowerShell Core](https://docs.microsoft.com/en-us/powershell/scripting/install/installing-powershell?view=powershell-6)
+* [SemVer](https://semver.org)
+* [GitVersion](https://gitversion.readthedocs.io)
+  * [- command line usage](https://gitversion.readthedocs.io/en/latest/usage/command-line/)
+  * [- intro to semver](https://gitversion.readthedocs.io/en/latest/reference/intro-to-semver/)
+
+## Technology Used
+
+* Git
+* CMD
+* HTML
+* YAML
+* NGINX
+* Docker
+* SemVer
+* Windows
+* PowerShell
+* GitVersion
